@@ -4,7 +4,7 @@
   "description": "Gulp Package Manager Starter",
   "main": "gulpfile.js",
   "author": "Fordyce Gozali",
-  "readMeFile": "readme.md",
+  "readMeFile": "README.md",
   "browser": {
     "underscore": "backbone/node_modules/underscore",
     "jquery": "./public/plugins/jquery.min.js"
