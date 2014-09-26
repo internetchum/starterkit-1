@@ -1,0 +1,32 @@
+{
+  "name": "www-surberbo",
+  "version": "0.0.0",
+  "description": "Surberbo bower package",
+  "main": "bower.json",
+  "moduleType": [
+    "amd",
+    "node"
+  ],
+  "keywords": [
+    "surberbo",
+    "bower"
+  ],
+  "authors": [
+    "Fordyce Gozali"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.2.0",
+    "jquery-migrate": "~1.2.1",
+    "modernizr": "~2.8.3",
+    "flot": "~0.8.3",
+    "jquery-lazyjaxdavis": "~0.2.2"
+  }
+}

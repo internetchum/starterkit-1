@@ -1,0 +1,72 @@
+body
+{
+	background: $main-body-color;
+}
+
+.layout-app
+{
+	position: relative;
+	margin: 12px 0 0;
+}
+
+.pace .pace-progress
+{
+	background: $pace-color;
+	position: fixed;
+	z-index: 2000;
+	top: 0;
+	left: 0;
+	height: 2px;
+
+	-webkit-transition: width 1s;
+	-moz-transition: width 1s;
+	-o-transition: width 1s;
+	transition: width 1s;
+}
+
+.pace-inactive
+{
+	display: none;
+}
+
+.page-icon
+{
+	font-size: 120px;
+	color: $icon-color-light;
+}
+
+.to-center
+{
+	text-align: center !important;
+}
+
+.btn-block
+{
+	width: 100%;
+	min-height: 30px;
+}
+
+.container
+{
+	background: $colors-white;
+}
+
+form
+{
+	label
+	{
+		font-size: 13px;
+	}
+
+	input
+	{
+		&:focus
+		{
+			border-color: #00FFFF;
+			-moz-box-shadow: none;
+			-webkit-box-shadow: none;
+			-o-box-shadow: none;
+			box-shadow: none;
+		}
+	}
+}

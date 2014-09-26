@@ -1,0 +1,15 @@
+{
+  "name": "jquery-lazyjaxdavis",
+  "homepage": "https://github.com/Takazudo/jQuery.LazyJaxDavis",
+  "version": "0.2.2",
+  "_release": "0.2.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.2",
+    "commit": "bb0884420ad87e01b7ecde5b3d5124fae5b47bf0"
+  },
+  "_source": "git://github.com/Takazudo/jQuery.LazyJaxDavis.git",
+  "_target": "~0.2.2",
+  "_originalSource": "jquery-lazyjaxdavis",
+  "_direct": true
+}
