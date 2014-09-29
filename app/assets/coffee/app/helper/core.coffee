@@ -1,6 +1,6 @@
-module.exports.Backbone = ->
-	bb 		= require 'backbone'
-	bb.$ 	= require 'jquery'
+module.exports.Backbone 				= require 'backbone'
+module.exports.Handlebars 			= require 'hbsfy/runtime'
+module.exports.Underscore 			= require 'underscore'
 
 module.exports.Core = ->
 	$('html,body *').removeAttr 'disabled'

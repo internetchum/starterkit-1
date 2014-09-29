@@ -7,3 +7,99 @@ div.dashboard-login
 		margin: 0;
 	}
 }
+
+div[role=navigation]
+{
+	.notifications
+	{
+		list-style: none outside none;
+		margin: 0;
+		padding: 0;
+		position: relative;
+
+		& > li
+		{
+			&:first-of-type
+			{
+				border-left: medium none;
+				padding: 0.1em 2em 0.1em 0.1em;
+
+				&:hover
+				{
+					background: $main-body-color;
+				}
+			}
+
+			.fa
+			{
+				color: #ccc;
+				font-size: 16px;
+				margin: 4px 0 2px;
+				display: block;
+			}
+
+			.badge
+			{
+				height: 18px;
+				line-height: 18px;
+				padding: 0;
+				position: relative;
+				width: 18px;
+			}
+		}
+	}
+
+	li.dropdown.notif
+	{
+		.dropdown-menu
+		{
+			left: -2px;
+			padding: 0;
+			top: 57px;
+			width: 280px;
+
+			&.chat-media-list
+			{
+				li
+				{
+					&.media
+					{
+						border-bottom: thin solid #dfdfdf;
+						padding: 10px;
+						margin: 0;
+
+						h5
+						{
+							font-size: 18px;
+						}
+
+						p
+						{
+							font-size: 14px;
+						}
+
+						&:hover
+						{
+							background: $main-body-color;
+						}
+					}
+
+					&:last-child
+					{
+						color: $colors-white;
+
+						a
+						{
+							border-radius: 0;
+						}
+
+						.fa
+						{
+							display: inline-block;
+						}
+					}
+				}
+			}
+		}
+	}
+}

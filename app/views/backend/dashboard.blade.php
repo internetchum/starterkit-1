@@ -9,12 +9,12 @@
 
 @section('scripts')
 	<script>
-		App.Scripts.bundle.push('{{ asset('assets/js/backend/app.js') }}');
+		App.Scripts.bundle.push('{{ ASSET_DIR."assets/js/backend/app.js" }}');
 	</script>
 @stop
 
 @section('content')
-	<div class="layout-app col-lg-12">
+	<div class="layout-app">
 		<div id="app-content"></div>
 	</div>
 @stop

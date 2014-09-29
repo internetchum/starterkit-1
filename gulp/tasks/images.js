@@ -5,7 +5,9 @@ var config 		=	require('../config').images;
 
 gulp.task('images', function() {
 	return gulp.src(config.src)
-		.pipe(changed(config.dest))
-		.pipe(imagemin())
+		.pipe(imagemin({
+			progressive: true,
+			svgoPlugins: [{removeViewBox: false}]
+		}))
 		.pipe(gulp.dest(config.dest));
 });

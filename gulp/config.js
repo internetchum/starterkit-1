@@ -12,7 +12,7 @@ module.exports = {
 		dest: dest+'/js'
 	},
 	images: {
-		src: src+"/images/**",
+		src: src+"/images/*",
 		dest: dest+"/images"
 	},
 	dist: {
@@ -21,6 +21,7 @@ module.exports = {
 	browserify: {
 		debug: true,
 		extensions: ['.coffee', '.hbs'],
+		watch: './app/assets/coffee/app/**/*.{coffee,hbs}',
 		bundleConfigs: [
 		{
 			entries: './app/assets/coffee/app/backend/app.coffee',

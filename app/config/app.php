@@ -121,6 +121,7 @@ return array(
 		'Illuminate\Foundation\Providers\LegacyStructureServiceProvider',
 		'Cartalyst\Sentry\SentryServiceProvider',
 		'Surberbo\Module\ModuleServiceProvider',
+		'Surberbo\User\UserServiceProvider',
 
 	),
 

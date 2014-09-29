@@ -6,7 +6,6 @@ body
 .layout-app
 {
 	position: relative;
-	margin: 12px 0 0;
 }
 
 .pace .pace-progress
@@ -40,10 +39,35 @@ body
 	text-align: center !important;
 }
 
-.btn-block
+div.checkbox
 {
-	width: 100%;
-	min-height: 30px;
+	span.text
+	{
+		margin-left: 5px;
+	}
+}
+
+.no-pad
+{
+	&.left
+	{
+		padding-left: 0;
+	}
+
+	&.right
+	{
+		padding-right: 0;
+	}
+
+	&.top
+	{
+		padding-top: 0;
+	}
+
+	&.bottom
+	{
+		padding-bottom: 0;
+	}
 }
 
 .container
@@ -51,22 +75,34 @@ body
 	background: $colors-white;
 }
 
-form
+.container-fluid
 {
-	label
-	{
-		font-size: 13px;
-	}
+	padding: 0;
+}
 
-	input
-	{
-		&:focus
-		{
-			border-color: #00FFFF;
-			-moz-box-shadow: none;
-			-webkit-box-shadow: none;
-			-o-box-shadow: none;
-			box-shadow: none;
-		}
-	}
+#content
+{
+	background: $main-body-color;
+	min-height: 500px;
+	min-width: 320px;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+
+.navbar
+{
+	border-radius: 0;
+	border-style: none;
+	border-width: medium 1px;
+	background: $colors-white;
+}
+
+.dropdown-menu
+{
+	background: $colors-white;
+	border: thin solid #dfdfdf;
+	border-radius: 0;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+	border-style: none;
 }

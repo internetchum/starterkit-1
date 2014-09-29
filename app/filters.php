@@ -13,7 +13,13 @@
 
 App::before(function($request)
 {
-	//
+	define('ASSET_DIR', Helper::assetHelper());
+
+	$provider = \Sentry::getThrottleProvider();
+	if (!$provider->isEnabled())
+	{
+		$provider->enable();
+	}
 });
 
 

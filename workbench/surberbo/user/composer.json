@@ -1,0 +1,24 @@
+{
+	"name": "surberbo/user",
+	"description": "",
+	"authors": [
+	{
+		"name": "Fordyce Gozali",
+		"email": "forddyce92@gmail.com"
+	}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"illuminate/support": "5.0.*"
+	},
+	"autoload": {
+		"classmap": [
+			"src/migrations",
+			"src/controllers"
+		],
+		"psr-4": {
+			"Surberbo\\User\\": "src/Surberbo/User/"
+		}
+	},
+	"minimum-stability": "stable"
+}			
