@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="navbar-header">
 			<a href="/dashboard">
-				<img src="{{ logo }}" width="55" title="Logo" />
+				<img src="/assets/images/logo.png" width="55" title="Logo" />
 			</a>
 		</div>
 		
@@ -10,7 +10,7 @@
 			<ul class="nav navbar-nav">
 				<!-- Admin Modules -->
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					<a href="#" class="dropdown-toggle btn btn-primary" data-toggle="dropdown">
 						Admin <i class="fa fa-caret-down"></i>
 					</a>
 					<ul class="dropdown-menu" role="menu">
@@ -23,7 +23,7 @@
 
 				<!-- Frontend Modules -->
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					<a href="#" class="dropdown-toggle btn btn-primary" data-toggle="dropdown">
 						Website <i class="fa fa-caret-down"></i>
 					</a>
 					<ul class="dropdown-menu" role="menu">
@@ -34,6 +34,10 @@
 					</ul>
 				</li>
 			</ul>
+
+			<div class="col-md-3 visible-md visible-lg pull-right no-padding">
+				
+			</div>
 
 			<ul class="nav navbar-nav notifications pull-right hidden-xs">
 				<li class="dropdown notif">
@@ -49,8 +53,8 @@
 							<div class="media-body">
 								<span class="label palette-orange pull-right">10 minutes ago</span>
 								<h5 class="media-heading">Person 1 Name</h5>
-								<p class="margin-none">
-									Lorem ipsum dolor sit amet...
+								<p class="no-margin">
+									<small>Lorem ipsum dolor sit amet...</small>
 								</p>
 							</div>
 						</li>
@@ -62,8 +66,8 @@
 							<div class="media-body">
 								<span class="label palette-orange pull-right">2 days ago</span>
 								<h5 class="media-heading">Person 2 Name</h5>
-								<p class="margin-none">
-									Lorem ipsum dolor sit amet...
+								<p class="no-margin">
+									<small>Lorem ipsum dolor sit amet...</small>
 								</p>
 							</div>
 						</li>
@@ -75,8 +79,8 @@
 							<div class="media-body">
 								<span class="label palette-orange pull-right">10 days ago</span>
 								<h5 class="media-heading">Person 3 Name</h5>
-								<p class="margin-none">
-									Lorem ipsum dolor sit amet...
+								<p class="no-margin">
+									<small>Lorem ipsum dolor sit amet...</small>
 								</p>
 							</div>
 						</li>
@@ -89,8 +93,6 @@
 						</li>
 					</ul>
 				</li>
-				<li><a href="#">Other Menu</a></li>
-				<li><a href="#">Other Menu 2</a></li>
 			</ul>
 		</div>
 	</div>

@@ -62,20 +62,23 @@ div[role=navigation]
 			{
 				li
 				{
+					border-right: thin solid #efefef;
+
 					&.media
 					{
 						border-bottom: thin solid #dfdfdf;
 						padding: 10px;
 						margin: 0;
 
-						h5
-						{
-							font-size: 18px;
-						}
-
-						p
+						.media-heading
 						{
 							font-size: 14px;
+						}
+
+						.media-body
+						{
+							margin-right: 2px;
+							text-align: left;
 						}
 
 						&:hover

@@ -1,12 +1,14 @@
 <?php
 
+use Illuminate\Routing\Controller;
+
 /**
  * Main controller of user module
  *
  * @package Surberbo/User
  */
 
-class UserController extends \BaseController
+class UserController extends Controller
 {
 	/**
 	 * Pipe collectino to read/write

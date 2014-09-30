@@ -24,23 +24,7 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
-$env = $app->detectEnvironment(function(){
-
-	$dir = __DIR__;
-
-  $isLocal       = strpos($dir, 'home/ford/web/www-surberbo/');
-  $isDevelopment = strpos($dir, 'var/www/my-domain.com/development/');
-  $isTest        = strpos($dir, 'var/www/my-domain.com/test/');
-  $isProduction  = strpos($dir, 'var/www/my-domain.com/web/');
-
-	if ($isLocal)       $environment = "local";
-  if ($isDevelopment) $environment = "development";
-  if ($isTest)        $environment = "test";
-  if ($isProduction)  $environment = "production";
-
-  return $environment;
-
-});
+require __DIR__.'/environment.php';
 
 /*
 |--------------------------------------------------------------------------

@@ -8,11 +8,3 @@ module.exports.User = bb.Model.extend
 		'email'	:	'',
 		'token'	: ''
 	adminLoginUrl: window.location.origin+'/dashboard/user/login'
-
-module.exports.Util = bb.Model.extend
-	logo:
-		initialize: ->
-			$.get(window.location.origin+'/asset',
-				_t: 'logo'
-			).done (e) ->
-				return

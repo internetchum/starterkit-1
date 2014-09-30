@@ -8,15 +8,12 @@ Model 						= require './model'
 
 Handlebars.registerPartial 'header', require '../templates/backend/inc/header'
 
-Util = new Model.Util()
-
 BaseView = bb.View.extend
 						handleProgress: (evt) ->
 							percentComplete = 0
 							if evt.lengthComputable
 								percentComplete = evt.loaded / evt.total
 								##console.log(Math.round(percentComplete * 100)+"%")
-						logo: Util.logo.initialize()
 						initialize: ->
 							@render = _.wrap(@render, (render) ->
 								@beforeRender()
@@ -73,7 +70,6 @@ DashboardView = BaseView.extend
 	template: require "../templates/backend/dashboard"
 	render: ->
 		@$el.html @template
-			logo: @logo.responseText
 		this
 
 module.exports.LoginView = LoginView
